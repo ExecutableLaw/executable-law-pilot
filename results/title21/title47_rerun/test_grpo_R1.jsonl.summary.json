@@ -1,0 +1,32 @@
+{
+ "model": "title21-run/sft",
+ "lora": "checkpoints/grpo_R1_adapter",
+ "em_by_year": {
+  "2024": [
+   0.75,
+   88
+  ],
+  "2025": [
+   0.6373626373626373,
+   91
+  ]
+ },
+ "data": "test.jsonl",
+ "nshots": 0,
+ "n_items": 179,
+ "em": 0.6927374301675978,
+ "em_ci95": [
+  0.6216913529777621,
+  0.7556844739675284
+ ],
+ "valid_rate": 0.9608938547486033,
+ "abstain_rate": 0.0,
+ "mean_conf": 0.95,
+ "ece": 0.25337078651685385,
+ "pass_any@n": null,
+ "gen_seconds": 24.64594340324402,
+ "prompt_tokens": 196122,
+ "output_tokens": 42077,
+ "prefill_tok_per_s": 7957.577309626763,
+ "decode_tok_per_s": 1707.2586474600773
+}

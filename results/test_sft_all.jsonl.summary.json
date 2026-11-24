@@ -1,0 +1,32 @@
+{
+ "model": "models/sft_all",
+ "lora": null,
+ "em_by_year": {
+  "2024": [
+   0.6022727272727273,
+   88
+  ],
+  "2025": [
+   0.4835164835164835,
+   91
+  ]
+ },
+ "data": "test.jsonl",
+ "nshots": 0,
+ "n_items": 179,
+ "em": 0.5418994413407822,
+ "em_ci95": [
+  0.46879360621961913,
+  0.6132446170293572
+ ],
+ "valid_rate": 0.9273743016759777,
+ "abstain_rate": 0.0,
+ "mean_conf": 1.0,
+ "ece": 0.45197740112994356,
+ "pass_any@n": null,
+ "gen_seconds": 21.5962393283844,
+ "prompt_tokens": 196122,
+ "output_tokens": 41696,
+ "prefill_tok_per_s": 9081.303324057566,
+ "decode_tok_per_s": 1930.7065163515786
+}

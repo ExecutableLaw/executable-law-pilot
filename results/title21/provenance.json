@@ -1,0 +1,52 @@
+{
+ "created_utc": "2026-11-24T02:23:04+00:00",
+ "control": {
+  "path": "models/sft_all_retrained",
+  "provenance": "retrained",
+  "kind": "merged model",
+  "weights_sha256": {
+   "model.safetensors": "6241a1990d6d9a423d3953ed59d314039ef49bbe23f43390760b63d12946ddaf"
+  },
+  "sft_stats": {
+   "examples": 772,
+   "tokens_per_epoch": 957723,
+   "epochs": 3.0,
+   "seconds": 770.6602187156677,
+   "train_tok_per_s": 3728.1916598578773,
+   "final_loss": [
+    {
+     "loss": 0.12210777997970582,
+     "grad_norm": 2.2339487075805664,
+     "learning_rate": 2.171115715874139e-07,
+     "epoch": 2.9740932642487046,
+     "step": 145
+    }
+   ],
+   "lr": 0.0002,
+   "rank": 64,
+   "opt_steps": 147
+  },
+  "sft_stats_path": "models/sft_all_retrained/sft_stats.json"
+ },
+ "released_adapter_sha256": {
+  "sft_adapter": "c1d099b8edf5c44c7a2903d5a8aea164b0845482e58076c89a5233597ede4942",
+  "grpo_R1_adapter": "cb410d775e0cdc68cf096e45cb18cc3a85b3694d4bbc13f41aa76807d5ba2fd0"
+ },
+ "frozen_inputs_sha256": {
+  "heldout.jsonl": "0f4a8937fbc714f66423d75bd6a504445a4808ab18eb67e848285228dc606a59",
+  "heldout_all.jsonl": "0244a7e5a9b0d4af964110a916ed53757d4ea39726ebec95042b664e5f15ada4"
+ },
+ "environment": {
+  "torch": "2.14.0",
+  "vllm": "0.33.0",
+  "transformers": "5.20.2",
+  "peft": "0.22.0",
+  "trl": "1.18.2",
+  "python": "3.12.3",
+  "gpu": "NVIDIA L40S, 620.70.06"
+ },
+ "warnings": [
+  "torch 2.14.0 (pilot 2.14.0+cu130)"
+ ],
+ "errors": []
+}

@@ -1,0 +1,27 @@
+{
+ "gpu": "1x NVIDIA L40S 48 GB (single-GPU cloud instance, 8 vCPU)",
+ "os": "Ubuntu 24.04",
+ "python": "3.12 (uv venv)",
+ "install": "uv pip install \"trl[vllm]\" peft datasets lxml requests",
+ "versions_reported_on_box": {
+  "torch": "2.14.0+cu130",
+  "cuda": "13.0",
+  "vllm": "0.33.0",
+  "trl": "1.18.2",
+  "peft": "0.22.0",
+  "transformers": "5.20.2"
+ },
+ "base_models": {
+  "Qwen/Qwen3-1.7B": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "Qwen/Qwen3-8B": "b968826d9c46dd6066d109eabc6255188de91218",
+  "Qwen/Qwen3-14B": "40c069824f4251a91eefaf281ebe4c544efd3e18"
+ },
+ "base_model_note": "Loaded from the Hub main branch on 2026-11-23. The SHAs are main as of that date (last modified 2025-07-26).",
+ "env_vars": {
+  "TOKENIZERS_PARALLELISM": "false",
+  "RANK": "0",
+  "LOCAL_RANK": "0",
+  "WORLD_SIZE": "1"
+ },
+ "run_window_utc": "2026-11-23 06:07 to 09:53"
+}

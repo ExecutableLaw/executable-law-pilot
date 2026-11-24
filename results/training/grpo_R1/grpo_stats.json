@@ -1,0 +1,13 @@
+{
+ "variant": "R1",
+ "steps": 72,
+ "seconds": 3034.7361953258514,
+ "completions": 4608,
+ "lr": 5e-05,
+ "rank": 32,
+ "G": 8,
+ "prompts_per_step": 8,
+ "dropped_cfg": [
+  "max_prompt_length"
+ ]
+}

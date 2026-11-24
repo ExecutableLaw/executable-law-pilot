@@ -1,0 +1,169 @@
+{
+ "rescored": {},
+ "overlap_eval_vs_sft_plus_rl": {
+  "eval_items": 89,
+  "eval_docs": 28,
+  "shared_fr_documents": [],
+  "items_from_shared_documents": 0,
+  "items_whose_cfr_section_is_in_train": 0,
+  "items_before_text_identical_to_a_train_before": 0,
+  "items_before_text_identical_to_a_train_after (chain)": 0,
+  "items_after_text_identical_to_a_train_after": 0,
+  "items_instruction_identical": 0,
+  "items_with_an_amdpar_identical_after_masking_section_numbers": 41,
+  "items_reference_program_identical_ignoring_indices": 2,
+  "instruction_5gram_jaccard_max_ge_0.5": 0,
+  "instruction_5gram_jaccard_max_ge_0.8": 0
+ },
+ "overlap_eval_vs_shots": {
+  "eval_items": 89,
+  "eval_docs": 28,
+  "shared_fr_documents": [],
+  "items_from_shared_documents": 0,
+  "items_whose_cfr_section_is_in_train": 0,
+  "items_before_text_identical_to_a_train_before": 0,
+  "items_before_text_identical_to_a_train_after (chain)": 0,
+  "items_after_text_identical_to_a_train_after": 0,
+  "items_instruction_identical": 0,
+  "items_with_an_amdpar_identical_after_masking_section_numbers": 0,
+  "items_reference_program_identical_ignoring_indices": 1,
+  "instruction_5gram_jaccard_max_ge_0.5": 0,
+  "instruction_5gram_jaccard_max_ge_0.8": 0
+ },
+ "eval_items_per_document": {
+  "docs": 28,
+  "max": 15,
+  "top5": [
+   [
+    "2024-24820",
+    15
+   ],
+   [
+    "2024-13190",
+    10
+   ],
+   [
+    "2024-10586",
+    9
+   ],
+   [
+    "2025-16079",
+    8
+   ],
+   [
+    "2025-01226",
+    7
+   ]
+  ],
+  "share_in_top5_docs": 0.550561797752809
+ },
+ "eval_items_by_effective_year_and_fr_document_year": {
+  "eff 2024 / doc 2023": 5,
+  "eff 2024 / doc 2024": 47,
+  "eff 2025 / doc 2024": 10,
+  "eff 2025 / doc 2025": 27
+ },
+ "eval_items_by_part": [
+  [
+   "520",
+   22
+  ],
+  [
+   "522",
+   16
+  ],
+  [
+   "524",
+   6
+  ],
+  [
+   "529",
+   5
+  ],
+  [
+   "211",
+   4
+  ],
+  [
+   "1311",
+   4
+  ],
+  [
+   "73",
+   3
+  ],
+  [
+   "900",
+   3
+  ],
+  [
+   "201",
+   3
+  ],
+  [
+   "112",
+   3
+  ]
+ ],
+ "em_by_subgroup": {
+  "before_text_was_a_training_target": {
+   "n": 0,
+   "em": {},
+   "ids": []
+  },
+  "not before_text_was_a_training_target": {
+   "n": 89,
+   "em": {},
+   "ids": null
+  },
+  "section_amended_in_training": {
+   "n": 0,
+   "em": {},
+   "ids": []
+  },
+  "not section_amended_in_training": {
+   "n": 89,
+   "em": {},
+   "ids": null
+  },
+  "reference_program_seen_in_training": {
+   "n": 2,
+   "em": {},
+   "ids": [
+    "21-1311.60-2025-11-03-2025-19325",
+    "21-211.94-2025-12-18-2024-13190"
+   ]
+  },
+  "not reference_program_seen_in_training": {
+   "n": 87,
+   "em": {},
+   "ids": null
+  },
+  "fr_document_year_before_effective_year": {
+   "n": 15,
+   "em": {},
+   "ids": [
+    "21-812.2-2024-01-22-2023-27935",
+    "21-900.14-2024-09-10-2023-04550",
+    "21-201.105-2025-12-18-2024-13190",
+    "21-210.2-2025-12-18-2024-13190",
+    "21-312.60-2024-01-22-2023-27935",
+    "21-210.1-2025-12-18-2024-13190",
+    "21-211.196-2025-12-18-2024-13190",
+    "21-201.161-2025-12-18-2024-13190",
+    "21-314.1-2025-12-18-2024-13190",
+    "21-211.1-2025-12-18-2024-13190",
+    "21-201.51-2025-12-18-2024-13190",
+    "21-211.170-2025-12-18-2024-13190",
+    "21-211.94-2025-12-18-2024-13190",
+    "21-900.15-2024-09-10-2023-04550",
+    "21-900.11-2024-09-10-2023-04550"
+   ]
+  },
+  "not fr_document_year_before_effective_year": {
+   "n": 74,
+   "em": {},
+   "ids": null
+  }
+ }
+}

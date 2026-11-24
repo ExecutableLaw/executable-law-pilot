@@ -1,0 +1,16 @@
+{
+ "base_model.model.model.layers.0.self_attn.q_proj": 0.3326840400695801,
+ "base_model.model.model.layers.0.self_attn.k_proj": 0.3146176338195801,
+ "base_model.model.model.layers.0.self_attn.v_proj": 0.35375356674194336,
+ "base_model.model.model.layers.0.self_attn.o_proj": 0.38247251510620117,
+ "base_model.model.model.layers.0.mlp.gate_proj": 0.3182240426540375,
+ "base_model.model.model.layers.0.mlp.up_proj": 0.37061405181884766,
+ "base_model.model.model.layers.0.mlp.down_proj": 0.22408096492290497,
+ "base_model.model.model.layers.1.self_attn.q_proj": 0.36225056648254395,
+ "base_model.model.model.layers.1.self_attn.k_proj": 0.3700432777404785,
+ "base_model.model.model.layers.1.self_attn.v_proj": 0.34058141708374023,
+ "base_model.model.model.layers.1.self_attn.o_proj": 0.371701717376709,
+ "base_model.model.model.layers.1.mlp.gate_proj": 0.2895677983760834,
+ "base_model.model.model.layers.1.mlp.up_proj": 0.4047338366508484,
+ "base_model.model.model.layers.1.mlp.down_proj": 0.27982378005981445
+}

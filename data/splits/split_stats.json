@@ -1,0 +1,72 @@
+{
+ "kept": 951,
+ "dropped": {
+  "before_too_long": 275,
+  "untracked_xml_tags": 201,
+  "target_too_long": 13,
+  "same_day_collision": 4,
+  "formulaic": 1,
+  "table": 2,
+  "strict_unattested_text": 4,
+  "duplicate": 1
+ },
+ "train": 772,
+ "sft": 463,
+ "rl": 309,
+ "test": 179,
+ "test_available": 179,
+ "shots": [
+  "47-64.6090-2020-11-23-2020-19951",
+  "47-32.6610-2018-01-01-2017-07175",
+  "47-5.71-2019-07-05-2019-10925",
+  "47-96.32-2020-05-01-2020-07582"
+ ],
+ "op_mix_test": [
+  [
+   "replace",
+   37
+  ],
+  [
+   "insert_after",
+   33
+  ],
+  [
+   "insert_after+replace",
+   29
+  ],
+  [
+   "set",
+   26
+  ],
+  [
+   "insert_after+set",
+   11
+  ],
+  [
+   "delete",
+   10
+  ],
+  [
+   "delete+replace+set",
+   8
+  ],
+  [
+   "replace+set",
+   7
+  ]
+ ],
+ "years": {
+  "2017": 105,
+  "2018": 152,
+  "2019": 73,
+  "2020": 195,
+  "2021": 97,
+  "2022": 44,
+  "2023": 106,
+  "2024": 88,
+  "2025": 91
+ },
+ "titles": {
+  "47": 951
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "examples": 463,
+ "tokens_per_epoch": 573699,
+ "epochs": 3.0,
+ "seconds": 486.2867751121521,
+ "train_tok_per_s": 3539.2634307257567,
+ "final_loss": [
+  {
+   "loss": 0.30166633129119874,
+   "grad_norm": 1.751104712486267,
+   "learning_rate": 6.140863104726391e-07,
+   "epoch": 2.9330453563714904,
+   "step": 85
+  }
+ ],
+ "lr": 0.0002,
+ "rank": 64,
+ "opt_steps": 87
+}

@@ -1,0 +1,32 @@
+{
+ "model": "Qwen/Qwen3-1.7B",
+ "lora": null,
+ "em_by_year": {
+  "2024": [
+   0.03409090909090909,
+   88
+  ],
+  "2025": [
+   0.02197802197802198,
+   91
+  ]
+ },
+ "data": "test.jsonl",
+ "nshots": 0,
+ "n_items": 179,
+ "em": 0.027932960893854747,
+ "em_ci95": [
+  0.011988873582240142,
+  0.06371381114596174
+ ],
+ "valid_rate": 0.26256983240223464,
+ "abstain_rate": 0.0,
+ "mean_conf": 1.0,
+ "ece": 0.9609375,
+ "pass_any@n": null,
+ "gen_seconds": 49.27738118171692,
+ "prompt_tokens": 196122,
+ "output_tokens": 138052,
+ "prefill_tok_per_s": 3979.959878078219,
+ "decode_tok_per_s": 2801.528747863342
+}

@@ -1,0 +1,179 @@
+{
+ "titles": [
+  "21"
+ ],
+ "effective_window": [
+  "2024-01-01",
+  "2025-12-31"
+ ],
+ "exclude_parts": "500-599",
+ "counts": {
+  "pooled_after_pilot_filters": 89,
+  "in_effective_date_window": 89,
+  "dropped_fr_document_also_in_47cfr_pilot": 0,
+  "heldout_all": 89,
+  "dropped_declared_formulaic_parts": 55,
+  "heldout_primary": 34
+ },
+ "shared_fr_documents_with_pilot": [],
+ "make_splits_dropped": {
+  "target_too_long": 4,
+  "before_too_long": 12,
+  "untracked_xml_tags": 10
+ },
+ "funnel": {
+  "total": {
+   "no_text_change": 37,
+   "unattested_text": 46,
+   "aligned": 115,
+   "new_section": 72,
+   "section_removed": 12,
+   "no_ecfr_version_on_effective_date": 9,
+   "no_instruction": 11
+  },
+  "by_title": {
+   "21": {
+    "no_text_change": 37,
+    "unattested_text": 46,
+    "aligned": 115,
+    "new_section": 72,
+    "section_removed": 12,
+    "no_ecfr_version_on_effective_date": 9,
+    "no_instruction": 11
+   }
+  }
+ },
+ "years": {
+  "all": {
+   "2024": 52,
+   "2025": 37
+  },
+  "primary": {
+   "2024": 14,
+   "2025": 20
+  }
+ },
+ "fr_documents": {
+  "all": 28,
+  "primary": 17
+ },
+ "parts_all": [
+  [
+   "520",
+   22
+  ],
+  [
+   "522",
+   16
+  ],
+  [
+   "524",
+   6
+  ],
+  [
+   "529",
+   5
+  ],
+  [
+   "211",
+   4
+  ],
+  [
+   "1311",
+   4
+  ],
+  [
+   "73",
+   3
+  ],
+  [
+   "900",
+   3
+  ],
+  [
+   "201",
+   3
+  ],
+  [
+   "112",
+   3
+  ],
+  [
+   "210",
+   2
+  ],
+  [
+   "516",
+   2
+  ],
+  [
+   "1",
+   2
+  ],
+  [
+   "573",
+   2
+  ],
+  [
+   "1150",
+   1
+  ],
+  [
+   "1010",
+   1
+  ],
+  [
+   "812",
+   1
+  ],
+  [
+   "312",
+   1
+  ],
+  [
+   "886",
+   1
+  ],
+  [
+   "880",
+   1
+  ],
+  [
+   "515",
+   1
+  ],
+  [
+   "314",
+   1
+  ],
+  [
+   "556",
+   1
+  ],
+  [
+   "1301",
+   1
+  ],
+  [
+   "170",
+   1
+  ],
+  [
+   "80",
+   1
+  ]
+ ],
+ "sha256_inputs": {
+  "splits/test.jsonl": "0244a7e5a9b0d4af964110a916ed53757d4ea39726ebec95042b664e5f15ada4",
+  "splits/sft.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "splits/rl.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "splits/split_stats.json": "89508641dfd1ddb2ebd18205f94f2a26ee97562068a0b19644b066584a1b1770",
+  "build/examples.jsonl": "2bdacc7e6b71c358d679502350558335fd1bcdfd6869b36725af2e53a4b558a7",
+  "build/rejects.jsonl": "96974d59a82f9a764f8391d5c9b1e1805553c9fe572b056d710df05c802286eb",
+  "build/funnel.json": "6904ef12f6acb3b3a09a9ff13f2c49b69b9cfbb7260ad6f1092a96543bd5269c"
+ },
+ "sha256_outputs": {
+  "heldout_all.jsonl": "0244a7e5a9b0d4af964110a916ed53757d4ea39726ebec95042b664e5f15ada4",
+  "heldout.jsonl": "0f4a8937fbc714f66423d75bd6a504445a4808ab18eb67e848285228dc606a59"
+ }
+}

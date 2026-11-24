@@ -1,0 +1,6 @@
+items in both 179 (only original 0, only rerun 0)
+EM original 124/179 = 69.3%, rerun 124/179 = 69.3%
+identical z on 177/179 items, byte-identical generated text on 173/179 items
+  z 0 -> 1  47-54.403-2024-01-14-2023-25835
+  z 1 -> 0  47-76.990-2025-08-13-2025-13107
+REBUILD_CHECK DIFFERS (report the flips above)

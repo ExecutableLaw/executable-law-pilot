@@ -1,0 +1,18 @@
+{
+ "engine": "vLLM 0.33.0, bf16, max_model_len 16384, gpu_memory_utilization 0.85, prefix caching, seed 0",
+ "decoding": "greedy (temperature 0, top_p 1.0, n 1, max_tokens 1536), Qwen3 non-thinking mode (enable_thinking=False)",
+ "commands": {
+  "test_base1.7b_0shot": "python infer.py --model Qwen/Qwen3-1.7B --data splits/test.jsonl",
+  "test_base1.7b_3shot": "python infer.py --model Qwen/Qwen3-1.7B --data splits/test.jsonl --shots splits/shots.jsonl --nshots 3",
+  "test_base8b_3shot": "python infer.py --model Qwen/Qwen3-8B --data splits/test.jsonl --shots splits/shots.jsonl --nshots 3",
+  "test_base14b_3shot": "python infer.py --model Qwen/Qwen3-14B --data splits/test.jsonl --shots splits/shots.jsonl --nshots 3",
+  "test_sft": "python infer.py --model models/sft --data splits/test.jsonl",
+  "test_sft_abstainprompt": "python infer.py --model models/sft --data splits/test.jsonl --abstain",
+  "test_sft_all": "python infer.py --model models/sft_all --data splits/test.jsonl",
+  "rl_prefilter": "python infer.py --model models/sft --data splits/rl.jsonl --n 8 --temp 1.0 --max-tokens 1280",
+  "test_grpo_R1": "python infer.py --model models/sft --lora models/grpo_R1_adapter --data splits/test.jsonl",
+  "test_grpo_R3": "python infer.py --model models/sft --lora models/grpo_R3_adapter --data splits/test.jsonl --abstain",
+  "report": "python report.py --res res --splits splits --models models --funnel splits/funnel_all.json"
+ },
+ "outputs": "results/<run>.jsonl (per item: id, z, valid, abstain, conf, generated text) and results/<run>.jsonl.summary.json; results/REPORT.json"
+}

@@ -1,0 +1,56 @@
+{
+ "command": "python grpo.py --model models/sft --data splits/rl_prompts.jsonl --variant R3 --out models/grpo_R3 --micro 4 --minutes 50",
+ "start_model": "models/sft (Qwen3-1.7B with sft_adapter merged in bf16)",
+ "data": "data/splits/rl_prompts.jsonl (175 of 309 RL-pool prompts with 1 to 7 of 8 SFT samples correct, from results/rl_prefilter.jsonl)",
+ "reward": "R1 minus 1.0*(conf - z)^2; abstain = 0; abstain system prompt",
+ "lora": {
+  "r": 32,
+  "lora_alpha": 64,
+  "lora_dropout": 0.0,
+  "target_modules": [
+   "q_proj",
+   "k_proj",
+   "v_proj",
+   "o_proj",
+   "gate_proj",
+   "up_proj",
+   "down_proj"
+  ]
+ },
+ "grpo_config": {
+  "learning_rate": 5e-05,
+  "lr_scheduler_type": "constant_with_warmup",
+  "warmup_steps": 5,
+  "per_device_train_batch_size": 4,
+  "gradient_accumulation_steps": 16,
+  "num_generations": 8,
+  "prompts_per_step": 8,
+  "max_steps": 120,
+  "max_completion_length": 1280,
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "beta": 0.0,
+  "num_iterations": 1,
+  "bf16": true,
+  "gradient_checkpointing": true,
+  "use_vllm": true,
+  "vllm_mode": "colocate",
+  "vllm_gpu_memory_utilization": 0.3,
+  "vllm_max_model_length": 8192,
+  "mask_truncated_completions": true,
+  "seed": 0,
+  "shuffle_dataset": true,
+  "model_init_kwargs": {
+   "dtype": "bfloat16"
+  }
+ },
+ "dropped_as_unsupported_by_trl_1.18.2": [
+  "max_prompt_length"
+ ],
+ "stop": "wall clock 50 min, 69 of 120 steps",
+ "completions": 4416,
+ "seconds": 3015.1,
+ "outputs": [
+  "models/grpo_R3_adapter"
+ ]
+}

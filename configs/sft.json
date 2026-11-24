@@ -1,0 +1,44 @@
+{
+ "command": "python sft.py --data splits/sft.jsonl --out models/sft --bs 1 --accum 16 --epochs 3",
+ "data": "data/splits/sft.jsonl (463 examples, 573,699 tokens per epoch, max 4,194 tokens)",
+ "base": "Qwen/Qwen3-1.7B, bf16, sdpa attention, gradient checkpointing (non-reentrant)",
+ "loss": "completion-only cross entropy via logits_to_keep; prompt and the confidence value are masked, program and confidence tags are learned",
+ "lora": {
+  "r": 64,
+  "lora_alpha": 128,
+  "lora_dropout": 0.05,
+  "target_modules": [
+   "q_proj",
+   "k_proj",
+   "v_proj",
+   "o_proj",
+   "gate_proj",
+   "up_proj",
+   "down_proj"
+  ]
+ },
+ "training_arguments": {
+  "per_device_train_batch_size": 1,
+  "gradient_accumulation_steps": 16,
+  "num_train_epochs": 3,
+  "learning_rate": 0.0002,
+  "lr_scheduler_type": "cosine",
+  "warmup_steps": 2,
+  "bf16": true,
+  "logging_steps": 5,
+  "save_strategy": "no",
+  "train_sampling_strategy": "group_by_length",
+  "dataloader_num_workers": 2,
+  "remove_unused_columns": false,
+  "seed": 0
+ },
+ "dropped_as_unsupported_by_transformers_5.20.2": [
+  "group_by_length"
+ ],
+ "optimizer_steps": 87,
+ "seconds": 486.3,
+ "outputs": [
+  "models/sft_adapter",
+  "models/sft (bf16 merged, used as GRPO start)"
+ ]
+}

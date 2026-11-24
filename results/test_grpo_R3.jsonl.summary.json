@@ -1,0 +1,32 @@
+{
+ "model": "models/sft",
+ "lora": "models/grpo_R3_adapter",
+ "em_by_year": {
+  "2024": [
+   0.6363636363636364,
+   88
+  ],
+  "2025": [
+   0.5824175824175825,
+   91
+  ]
+ },
+ "data": "test.jsonl",
+ "nshots": 0,
+ "n_items": 179,
+ "em": 0.6089385474860335,
+ "em_ci95": [
+  0.535878735334743,
+  0.677420645112595
+ ],
+ "valid_rate": 0.9217877094972067,
+ "abstain_rate": 0.0,
+ "mean_conf": 1.0,
+ "ece": 0.3876404494382022,
+ "pass_any@n": null,
+ "gen_seconds": 24.962026834487915,
+ "prompt_tokens": 200776,
+ "output_tokens": 42827,
+ "prefill_tok_per_s": 8043.257117350937,
+ "decode_tok_per_s": 1715.6860011395215
+}

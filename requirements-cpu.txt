@@ -1,0 +1,2 @@
+# CPU verification (tools/verify_cpu.py). tools/paired_metrics.py needs only the standard library.
+lxml==6.1.3
